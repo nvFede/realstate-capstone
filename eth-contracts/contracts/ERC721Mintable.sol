@@ -606,12 +606,12 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
         _tokenURIs[tokenId] = usingOraclize.strConcat(_baseTokenURI,strTokenId);
     }
     //Internal function to burn a specific token
-    function _burn(address owner, uint256 tokenId) internal {
-        super._burn(owner, tokenId);
-        if (bytes(_tokenURIs[tokenId]).length != 0) {
-            delete _tokenURIs[tokenId];
-        }
-    }
+    // function _burn(address owner, uint256 tokenId) internal {
+    //     super._burn(owner, tokenId);
+    //     if (bytes(_tokenURIs[tokenId]).length != 0) {
+    //         delete _tokenURIs[tokenId];
+    //     }
+    // }
 }   
 
 //  TODO's: Create CustomERC721Token contract that inherits from the ERC721Metadata contract. You can name this contract as you please
