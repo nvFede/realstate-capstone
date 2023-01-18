@@ -1,56 +1,14 @@
-// var ERC721MintableComplete = artifacts.require('ERC721MintableComplete');
 
-// contract('TestERC721Mintable', accounts => {
-
-//     const ACCOUNT_ONE = accounts[0];
-//     const ACCOUNT_TWO = accounts[1];
-
-//     describe('match erc721 spec', function () {
-//         beforeEach(async function () {
-//             this.contract = await ERC721MintableComplete.new({from: ACCOUNT_ONE});
-
-//             // TODO: mint multiple tokens
-//         })
-
-//         it('should return total supply', async function () {
-
-//         })
-
-//         it('should get token balance', async function () {
-
-//         })
-
-//         // token uri should be complete i.e: https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/1
-//         it('should return token uri', async function () {
-
-//         })
-
-//         it('should transfer token from one owner to another', async function () {
-
-//         })
-//     });
-
-//     describe('have ownership properties', function () {
-//         beforeEach(async function () {
-//             this.contract = await ERC721MintableComplete.new({from: ACCOUNT_ONE});
-//         })
-
-//         it('should fail when minting when address is not contract owner', async function () {
-
-//         })
-
-//         it('should return contract owner', async function () {
-
-//         })
-
-//     });
-// })
-
-var ERC721MintableComplete = artifacts.require("CustomERC721Token");
+const ERC721MIntable = artifacts.require("ERC721MIntable");
 
 contract("TestERC721Mintable", (accounts) => {
+
+  const SYMBOL = 'REMT';
+  const NAME = "Real Estate Marketplace Token";
+  const BASE_TOKEN_URI = 'https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/'
+ 
   
-    const ACCOUNT_ONE   = accounts[0];
+  const ACCOUNT_ONE   = accounts[0];
   const ACCOUNT_TWO   = accounts[1];
   const ACCOUNT_THREE = accounts[2];
   const ACCOUNT_FOUR  = accounts[3];
@@ -58,7 +16,7 @@ contract("TestERC721Mintable", (accounts) => {
 
   describe("match erc721 spec", function () {
     beforeEach(async function () {
-      this.contract = await ERC721MintableComplete.new({ from: ACCOUNT_ONE });
+      this.contract = await ERC721MIntable.new(NAME, SYMBOL, BASE_TOKEN_URI, { from: ACCOUNT_ONE });
 
       // TODO: mint multiple tokens
       await this.contract.mint(ACCOUNT_ONE, 1, { from: ACCOUNT_ONE });
