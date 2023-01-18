@@ -1,8 +1,9 @@
 pragma solidity >=0.4.21 <0.6.0;
+
 import './ERC721Mintable.sol';
 
-// TODO define another contract named SolnSquareVerifier that inherits from your ERC721Mintable class
-contract SolnSquareVerifier is ERC721Mintable {
+// TODO define another contract named SolnSquareVerifier that inherits from your CustomERC721Token class
+contract SolnSquareVerifier is CustomERC721Token {
 
     Verifier verifierContract;
 // TODO define a solutions struct that can hold an index & an address
@@ -29,7 +30,7 @@ contract SolnSquareVerifier is ERC721Mintable {
 // TODO Create an event to emit when a solution is added
     event SolutionAdded(address owner);
     constructor(address verifierAddress, string memory name, string memory symbol, string memory baseTokenURI )
-        ERC721Mintable(name, symbol, baseTokenURI) public
+        CustomERC721Token(name, symbol, baseTokenURI) public
     {
         verifierContract = Verifier(verifierAddress);
     }

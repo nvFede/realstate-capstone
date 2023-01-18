@@ -113,16 +113,19 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"Paused\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"oldOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"TransferOwnership\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"Unpaused\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"_transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bool\",\"name\":\"mode\",\"type\":\"bool\"}],\"name\":\"setPaused\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ERC721Mintable.sol\":\"Pausable\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"openzeppelin-solidity/contracts/drafts/Counters.sol\":{\"keccak256\":\"0x5be8533c5950173dc2b77b75108fae6e6c5449aedadde3385ba457394aad2384\",\"urls\":[\"bzz-raw://d429fb04f5b31d909dc759d0f88e28055b80b4dd43e5def4dffc947fa0609229\",\"dweb:/ipfs/QmaY9idX5CwLLtjjTQAdiiaDSrncgafkatUZXTbbajpz8b\"]},\"openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x640b6dee7a4b830bdfd52b5031a07fc2b12209f5b2e29e5d364a7d37f69d8076\",\"urls\":[\"bzz-raw://31113152e1ddb78fe7a4197f247591ca894e93f916867beb708d8e747b6cc74f\",\"dweb:/ipfs/QmbZaJyXdpsYGykVhHH9qpVGQg9DGCxE2QufbCUy3daTgq\"]},\"openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0x042048c375daca04b31e31c91bbae912b84b5eb818c4e31b2deb530fd2305342\",\"urls\":[\"bzz-raw://d877a87c5e29b9ffca3e334378058c051a4e012fd3635039681003a9376baf1f\",\"dweb:/ipfs/QmR45snf93cFXtB71TZcmoGy9DbcMha8CqgkDKaLvhjXZK\"]},\"openzeppelin-solidity/contracts/utils/Address.sol\":{\"keccak256\":\"0x1a8e5072509c5ea7365eb1d48030b9be865140c8fb779968da0a459a0e174a11\",\"urls\":[\"bzz-raw://03335b7b07c7c8c8d613cfdd8ec39a0b5ec133ee510bf2fe6cc5a496767bef4b\",\"dweb:/ipfs/Qmebp4nzPja645c9yXSdJkGq96oU3am3LUnG2K3R7XxyKf\"]},\"project:/contracts/ERC721Mintable.sol\":{\"keccak256\":\"0x3965e35c00fae418163e276a99aa1b9480a09ab120f8432a0a10f46d95374131\",\"urls\":[\"bzz-raw://e1e6e6e24fd0840603ff2728744970f60f135c2d77b296a7d760772db1ac9127\",\"dweb:/ipfs/QmZfhGJUoXZt2KTzmbuxEQFs7DmhRUKMdFyLvB4yoe6itX\"]},\"project:/contracts/Oraclize.sol\":{\"keccak256\":\"0xe5ebe286b4624095629f76c6ac8dbad3cb305fbdb43fff09e4eebed35a05b49c\",\"urls\":[\"bzz-raw://681373c60944fa44771ccea64da3a0e1b428255757df53cfee06eae96f4ac91d\",\"dweb:/ipfs/QmWS7E26x3aXyYEZSzhTTpr8Pu11y5NK9p9iMwwvm7tMsz\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"Paused\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"oldOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"TransferOwnership\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"Unpaused\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"_transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bool\",\"name\":\"mode\",\"type\":\"bool\"}],\"name\":\"setPaused\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ERC721Mintable.sol\":\"Pausable\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"openzeppelin-solidity/contracts/drafts/Counters.sol\":{\"keccak256\":\"0x5be8533c5950173dc2b77b75108fae6e6c5449aedadde3385ba457394aad2384\",\"urls\":[\"bzz-raw://d429fb04f5b31d909dc759d0f88e28055b80b4dd43e5def4dffc947fa0609229\",\"dweb:/ipfs/QmaY9idX5CwLLtjjTQAdiiaDSrncgafkatUZXTbbajpz8b\"]},\"openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x640b6dee7a4b830bdfd52b5031a07fc2b12209f5b2e29e5d364a7d37f69d8076\",\"urls\":[\"bzz-raw://31113152e1ddb78fe7a4197f247591ca894e93f916867beb708d8e747b6cc74f\",\"dweb:/ipfs/QmbZaJyXdpsYGykVhHH9qpVGQg9DGCxE2QufbCUy3daTgq\"]},\"openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0x042048c375daca04b31e31c91bbae912b84b5eb818c4e31b2deb530fd2305342\",\"urls\":[\"bzz-raw://d877a87c5e29b9ffca3e334378058c051a4e012fd3635039681003a9376baf1f\",\"dweb:/ipfs/QmR45snf93cFXtB71TZcmoGy9DbcMha8CqgkDKaLvhjXZK\"]},\"openzeppelin-solidity/contracts/utils/Address.sol\":{\"keccak256\":\"0x1a8e5072509c5ea7365eb1d48030b9be865140c8fb779968da0a459a0e174a11\",\"urls\":[\"bzz-raw://03335b7b07c7c8c8d613cfdd8ec39a0b5ec133ee510bf2fe6cc5a496767bef4b\",\"dweb:/ipfs/Qmebp4nzPja645c9yXSdJkGq96oU3am3LUnG2K3R7XxyKf\"]},\"project:/contracts/ERC721Mintable.sol\":{\"keccak256\":\"0xa75daaade806b53683bce9309941eba3c430e8534824869475a8caf3a941c9ca\",\"urls\":[\"bzz-raw://deff11dc1407f4ba867217a7fc4a60a00f750a4cbe59fbc702013902f67117c6\",\"dweb:/ipfs/QmaTMKwaRVYTZ8k8zJu5hYWaPJeCAS5t9VPWfMnrpiE14e\"]},\"project:/contracts/Oraclize.sol\":{\"keccak256\":\"0xe5ebe286b4624095629f76c6ac8dbad3cb305fbdb43fff09e4eebed35a05b49c\",\"urls\":[\"bzz-raw://681373c60944fa44771ccea64da3a0e1b428255757df53cfee06eae96f4ac91d\",\"dweb:/ipfs/QmWS7E26x3aXyYEZSzhTTpr8Pu11y5NK9p9iMwwvm7tMsz\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity ^0.5.0;\n\nimport \"openzeppelin-solidity/contracts/utils/Address.sol\";\nimport \"openzeppelin-solidity/contracts/drafts/Counters.sol\";\nimport \"openzeppelin-solidity/contracts/math/SafeMath.sol\";\nimport \"openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol\";\nimport \"./Oraclize.sol\";\n\ncontract Ownable {\n    //  1) create a private '_owner' variable of type address with a public getter function\n    address private _owner;\n\n    function getOwner() public view returns (address) {\n        return _owner;\n    }\n\n    //  2) create an internal constructor that sets the _owner var to the creater of the contract\n    constructor() internal {\n        _owner = msg.sender;\n        emit TransferOwnership(address(0), _owner);\n    }\n\n    //  3) create an 'onlyOwner' modifier that throws if called by any account other than the owner.\n    modifier onlyOwner() {\n        require(msg.sender == _owner, \"Only the owner can perform this action.\");\n        _;\n    }\n\n    //  4) fill out the transferOwnership function\n    function transferOwnership(address newOwner) public onlyOwner {\n        // TODO add functionality to transfer control of the contract to a newOwner.\n        // make sure the new owner is a real address\n        _transferOwnership(newOwner);\n    }\n\n    function _transferOwnership(address newOwner) public onlyOwner {\n        // TODO add functionality to transfer control of the contract to a newOwner.\n        // make sure the new owner is a real address\n        require(newOwner != address(0));\n        emit TransferOwnership(_owner, newOwner);\n        _owner = newOwner;\n    }\n\n    //  5) create an event that emits anytime ownerShip is transfered (including in the constructor)\n    event TransferOwnership(address indexed oldOwner, address indexed newOwner);\n}\n\n//  TODO's: Create a Pausable contract that inherits from the Ownable contract\ncontract Pausable is Ownable {\n    //  1) create a private '_paused' variable of type bool\n    bool private _paused;\n\n    //  2) create a public setter using the inherited onlyOwner modifier\n    function setPaused(bool mode) public onlyOwner {\n        require(_paused != mode);\n        _paused = mode;\n        if (mode) emit Unpaused(msg.sender);\n        else emit Paused(msg.sender);\n    }\n\n    //  3) create an internal constructor that sets the _paused variable to false\n    constructor() internal {\n        _paused = false;\n    }\n\n    //  4) create 'whenNotPaused' & 'paused' modifier that throws in the appropriate situation\n    modifier whenNotPaused() {\n        require(!_paused);\n        _;\n    }\n\n    modifier paused() {\n        require(_paused);\n        _;\n    }\n    //  5) create a Paused & Unpaused event that emits the address that triggered the event\n    event Paused(address indexed account);\n    event Unpaused(address indexed account);\n}\n\ncontract ERC165 {\n    bytes4 private constant _INTERFACE_ID_ERC165 = 0x01ffc9a7;\n    /*\n     * 0x01ffc9a7 ===\n     *     bytes4(keccak256('supportsInterface(bytes4)'))\n     */\n\n    /**\n     * @dev a mapping of interface id to whether or not it's supported\n     */\n    mapping(bytes4 => bool) private _supportedInterfaces;\n\n    /**\n     * @dev A contract implementing SupportsInterfaceWithLookup\n     * implement ERC165 itself\n     */\n    constructor() internal {\n        _registerInterface(_INTERFACE_ID_ERC165);\n    }\n\n    /**\n     * @dev implement supportsInterface(bytes4) using a lookup table\n     */\n    function supportsInterface(bytes4 interfaceId)\n        external\n        view\n        returns (bool)\n    {\n        return _supportedInterfaces[interfaceId];\n    }\n\n    /**\n     * @dev internal method for registering an interface\n     */\n    function _registerInterface(bytes4 interfaceId) internal {\n        require(interfaceId != 0xffffffff);\n        _supportedInterfaces[interfaceId] = true;\n    }\n}\n\ncontract ERC721 is Pausable, ERC165 {\n    event Transfer(\n        address indexed from,\n        address indexed to,\n        uint256 indexed tokenId\n    );\n\n    event Approval(\n        address indexed owner,\n        address indexed approved,\n        uint256 indexed tokenId\n    );\n\n    event ApprovalForAll(\n        address indexed owner,\n        address indexed operator,\n        bool approved\n    );\n\n    using SafeMath for uint256;\n    using Address for address;\n    using Counters for Counters.Counter;\n\n    // Equals to `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`\n    // which can be also obtained as `IERC721Receiver(0).onERC721Received.selector`\n    bytes4 private constant _ERC721_RECEIVED = 0x150b7a02;\n\n    // Mapping from token ID to owner\n    mapping(uint256 => address) private _tokenOwner;\n\n    // Mapping from token ID to approved address\n    mapping(uint256 => address) private _tokenApprovals;\n\n    // Mapping from owner to number of owned token\n    // IMPORTANT: this mapping uses Counters lib which is used to protect overflow when incrementing/decrementing a uint\n    // use the following functions when interacting with Counters: increment(), decrement(), and current() to get the value\n    // see: https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/contracts/drafts/Counters.sol\n    mapping(address => Counters.Counter) private _ownedTokensCount;\n\n    // Mapping from owner to operator approvals\n    mapping(address => mapping(address => bool)) private _operatorApprovals;\n\n    bytes4 private constant _INTERFACE_ID_ERC721 = 0x80ac58cd;\n\n    constructor() public {\n        // register the supported interfaces to conform to ERC721 via ERC165\n        _registerInterface(_INTERFACE_ID_ERC721);\n    }\n\n    function balanceOf(address owner) public view returns (uint256) {\n        // TODO return the token balance of given address\n        // TIP: remember the functions to use for Counters. you can refresh yourself with the link above\n        return _ownedTokensCount[owner].current();\n    }\n\n    function ownerOf(uint256 tokenId) public view returns (address) {\n        // TODO return the owner of the given tokenId\n        return _tokenOwner[tokenId];\n    }\n\n    //    @dev Approves another address to transfer the given token ID\n    function approve(address to, uint256 tokenId) public {\n        address owner = ownerOf(tokenId);\n        // TODO require the given address to not be the owner of the tokenId\n        \n        require(to != owner, \" the given address can't be the owner of the tokenId\");\n        // TODO require the msg sender to be the owner of the contract or isApprovedForAll() to be true\n         require(msg.sender == owner || isApprovedForAll(owner, msg.sender), \"Caller is not authorised\");\n        // TODO add 'to' address to token approvals\n        _tokenApprovals[tokenId] = to;\n        // TODO emit Approval Event\n        emit Approval(_tokenOwner[tokenId], to, tokenId);\n    }\n\n    function getApproved(uint256 tokenId) public view returns (address) {\n        // TODO return token approval if it exists\n        require(_exists(tokenId), \"N0N-existent token\");\n        return _tokenApprovals[tokenId];\n    }\n\n    /**\n     * @dev Sets or unsets the approval of a given operator\n     * An operator is allowed to transfer all tokens of the sender on their behalf\n     * @param to operator address to set the approval\n     * @param approved representing the status of the approval to be set\n     */\n    function setApprovalForAll(address to, bool approved) public {\n        require(to != msg.sender);\n        _operatorApprovals[msg.sender][to] = approved;\n        emit ApprovalForAll(msg.sender, to, approved);\n    }\n\n    /**\n     * @dev Tells whether an operator is approved by a given owner\n     * @param owner owner address which you want to query the approval of\n     * @param operator operator address which you want to query the approval of\n     * @return bool whether the given operator is approved by the given owner\n     */\n    function isApprovedForAll(address owner, address operator)\n        public\n        view\n        returns (bool)\n    {\n        return _operatorApprovals[owner][operator];\n    }\n\n    function transferFrom(\n        address from,\n        address to,\n        uint256 tokenId\n    ) public {\n        require(_isApprovedOrOwner(msg.sender, tokenId));\n\n        _transferFrom(from, to, tokenId);\n    }\n\n    function safeTransferFrom(\n        address from,\n        address to,\n        uint256 tokenId\n    ) public {\n        safeTransferFrom(from, to, tokenId, \"\");\n    }\n\n    function safeTransferFrom(\n        address from,\n        address to,\n        uint256 tokenId,\n        bytes memory _data\n    ) public {\n        transferFrom(from, to, tokenId);\n        require(_checkOnERC721Received(from, to, tokenId, _data));\n    }\n\n    /**\n     * @dev Returns whether the specified token exists\n     * @param tokenId uint256 ID of the token to query the existence of\n     * @return bool whether the token exists\n     */\n    function _exists(uint256 tokenId) internal view returns (bool) {\n        address owner = _tokenOwner[tokenId];\n        return owner != address(0);\n    }\n\n    /**\n     * @dev Returns whether the given spender can transfer a given token ID\n     * @param spender address of the spender to query\n     * @param tokenId uint256 ID of the token to be transferred\n     * @return bool whether the msg.sender is approved for the given token ID,\n     * is an operator of the owner, or is the owner of the token\n     */\n    function _isApprovedOrOwner(address spender, uint256 tokenId)\n        internal\n        view\n        returns (bool)\n    {\n        address owner = ownerOf(tokenId);\n        return (spender == owner ||\n            getApproved(tokenId) == spender ||\n            isApprovedForAll(owner, spender));\n    }\n\n    // @dev Internal function to mint a new token\n    // TIP: remember the functions to use for Counters. you can refresh yourself with the link above\n    function _mint(address to, uint256 tokenId)  internal {\n        // TODO revert if given tokenId already exists or given address is invalid\n        require(!_exists(tokenId), \"This token is already exists\");\n\n        // TODO mint tokenId to given address & increase token count of owner\n        _tokenOwner[tokenId] = to;\n        _ownedTokensCount[to].increment();\n\n        // TODO emit Transfer event\n        emit Transfer(address(0), to, tokenId);\n    }\n\n    // @dev Internal function to transfer ownership of a given token ID to another address.\n    // TIP: remember the functions to use for Counters. you can refresh yourself with the link above\n    function _transferFrom(\n        address from,\n        address to,\n        uint256 tokenId\n    ) internal {\n         // TODO: require from address is the owner of the given token\n        require(ownerOf(tokenId) == from, \"Incorrect owner\");\n\n        // TODO: require token is being transfered to valid address\n        require(to != address(0), \"Not allowed to transfer\");\n\n        // TODO: clear approval\n        _clearApproval(tokenId);\n\n        // TODO: update token counts & transfer ownership of the token ID\n        _ownedTokensCount[from].decrement();\n        _ownedTokensCount[to].increment();\n        _tokenOwner[tokenId] = to;\n\n        // TODO: emit correct event\n        emit Transfer(from, to, tokenId);\n    }\n\n    /**\n     * @dev Internal function to invoke `onERC721Received` on a target address\n     * The call is not executed if the target address is not a contract\n     * @param from address representing the previous owner of the given token ID\n     * @param to target address that will receive the tokens\n     * @param tokenId uint256 ID of the token to be transferred\n     * @param _data bytes optional data to send along with the call\n     * @return bool whether the call correctly returned the expected magic value\n     */\n    function _checkOnERC721Received(\n        address from,\n        address to,\n        uint256 tokenId,\n        bytes memory _data\n    ) internal returns (bool) {\n        if (!to.isContract()) {\n            return true;\n        }\n\n        bytes4 retval = IERC721Receiver(to).onERC721Received(\n            msg.sender,\n            from,\n            tokenId,\n            _data\n        );\n        return (retval == _ERC721_RECEIVED);\n    }\n\n    // @dev Private function to clear current approval of a given token ID\n    function _clearApproval(uint256 tokenId) private {\n        if (_tokenApprovals[tokenId] != address(0)) {\n            _tokenApprovals[tokenId] = address(0);\n        }\n    }\n}\n\ncontract ERC721Enumerable is ERC165, ERC721 {\n    // Mapping from owner to list of owned token IDs\n    mapping(address => uint256[]) private _ownedTokens;\n\n    // Mapping from token ID to index of the owner tokens list\n    mapping(uint256 => uint256) private _ownedTokensIndex;\n\n    // Array with all token ids, used for enumeration\n    uint256[] private _allTokens;\n\n    // Mapping from token id to position in the allTokens array\n    mapping(uint256 => uint256) private _allTokensIndex;\n\n    bytes4 private constant _INTERFACE_ID_ERC721_ENUMERABLE = 0x780e9d63;\n\n    /*\n     * 0x780e9d63 ===\n     *     bytes4(keccak256('totalSupply()')) ^\n     *     bytes4(keccak256('tokenOfOwnerByIndex(address,uint256)')) ^\n     *     bytes4(keccak256('tokenByIndex(uint256)'))\n     */\n\n    /**\n     * @dev Constructor function\n     */\n    constructor() public {\n        // register the supported interface to conform to ERC721Enumerable via ERC165\n        _registerInterface(_INTERFACE_ID_ERC721_ENUMERABLE);\n    }\n\n    /**\n     * @dev Gets the token ID at a given index of the tokens list of the requested owner\n     * @param owner address owning the tokens list to be accessed\n     * @param index uint256 representing the index to be accessed of the requested tokens list\n     * @return uint256 token ID at the given index of the tokens list owned by the requested address\n     */\n    function tokenOfOwnerByIndex(address owner, uint256 index)\n        public\n        view\n        returns (uint256)\n    {\n        require(index < balanceOf(owner));\n        return _ownedTokens[owner][index];\n    }\n\n    /**\n     * @dev Gets the total amount of tokens stored by the contract\n     * @return uint256 representing the total amount of tokens\n     */\n    function totalSupply() public view returns (uint256) {\n        return _allTokens.length;\n    }\n\n    /**\n     * @dev Gets the token ID at a given index of all the tokens in this contract\n     * Reverts if the index is greater or equal to the total number of tokens\n     * @param index uint256 representing the index to be accessed of the tokens list\n     * @return uint256 token ID at the given index of the tokens list\n     */\n    function tokenByIndex(uint256 index) public view returns (uint256) {\n        require(index < totalSupply());\n        return _allTokens[index];\n    }\n\n    /**\n     * @dev Internal function to transfer ownership of a given token ID to another address.\n     * As opposed to transferFrom, this imposes no restrictions on msg.sender.\n     * @param from current owner of the token\n     * @param to address to receive the ownership of the given token ID\n     * @param tokenId uint256 ID of the token to be transferred\n     */\n    function _transferFrom(\n        address from,\n        address to,\n        uint256 tokenId\n    ) internal {\n        super._transferFrom(from, to, tokenId);\n\n        _removeTokenFromOwnerEnumeration(from, tokenId);\n\n        _addTokenToOwnerEnumeration(to, tokenId);\n    }\n\n    /**\n     * @dev Internal function to mint a new token\n     * Reverts if the given token ID already exists\n     * @param to address the beneficiary that will own the minted token\n     * @param tokenId uint256 ID of the token to be minted\n     */\n    function _mint(address to, uint256 tokenId) internal {\n        super._mint(to, tokenId);\n\n        _addTokenToOwnerEnumeration(to, tokenId);\n\n        _addTokenToAllTokensEnumeration(tokenId);\n    }\n\n    /**\n     * @dev Gets the list of token IDs of the requested owner\n     * @param owner address owning the tokens\n     * @return uint256[] List of token IDs owned by the requested address\n     */\n    function _tokensOfOwner(address owner)\n        internal\n        view\n        returns (uint256[] storage)\n    {\n        return _ownedTokens[owner];\n    }\n\n    /**\n     * @dev Private function to add a token to this extension's ownership-tracking data structures.\n     * @param to address representing the new owner of the given token ID\n     * @param tokenId uint256 ID of the token to be added to the tokens list of the given address\n     */\n    function _addTokenToOwnerEnumeration(address to, uint256 tokenId) private {\n        _ownedTokensIndex[tokenId] = _ownedTokens[to].length;\n        _ownedTokens[to].push(tokenId);\n    }\n\n    /**\n     * @dev Private function to add a token to this extension's token tracking data structures.\n     * @param tokenId uint256 ID of the token to be added to the tokens list\n     */\n    function _addTokenToAllTokensEnumeration(uint256 tokenId) private {\n        _allTokensIndex[tokenId] = _allTokens.length;\n        _allTokens.push(tokenId);\n    }\n\n    /**\n     * @dev Private function to remove a token from this extension's ownership-tracking data structures. Note that\n     * while the token is not assigned a new owner, the _ownedTokensIndex mapping is _not_ updated: this allows for\n     * gas optimizations e.g. when performing a transfer operation (avoiding double writes).\n     * This has O(1) time complexity, but alters the order of the _ownedTokens array.\n     * @param from address representing the previous owner of the given token ID\n     * @param tokenId uint256 ID of the token to be removed from the tokens list of the given address\n     */\n    function _removeTokenFromOwnerEnumeration(address from, uint256 tokenId)\n        private\n    {\n        // To prevent a gap in from's tokens array, we store the last token in the index of the token to delete, and\n        // then delete the last slot (swap and pop).\n\n        uint256 lastTokenIndex = _ownedTokens[from].length.sub(1);\n        uint256 tokenIndex = _ownedTokensIndex[tokenId];\n\n        // When the token to delete is the last token, the swap operation is unnecessary\n        if (tokenIndex != lastTokenIndex) {\n            uint256 lastTokenId = _ownedTokens[from][lastTokenIndex];\n\n            _ownedTokens[from][tokenIndex] = lastTokenId; // Move the last token to the slot of the to-delete token\n            _ownedTokensIndex[lastTokenId] = tokenIndex; // Update the moved token's index\n        }\n\n        // This also deletes the contents at the last position of the array\n        _ownedTokens[from].length--;\n\n        // Note that _ownedTokensIndex[tokenId] hasn't been cleared: it still points to the old slot (now occupied by\n        // lastTokenId, or just over the end of the array if the token was the last one).\n    }\n\n    /**\n     * @dev Private function to remove a token from this extension's token tracking data structures.\n     * This has O(1) time complexity, but alters the order of the _allTokens array.\n     * @param tokenId uint256 ID of the token to be removed from the tokens list\n     */\n    function _removeTokenFromAllTokensEnumeration(uint256 tokenId) private {\n        // To prevent a gap in the tokens array, we store the last token in the index of the token to delete, and\n        // then delete the last slot (swap and pop).\n\n        uint256 lastTokenIndex = _allTokens.length.sub(1);\n        uint256 tokenIndex = _allTokensIndex[tokenId];\n\n        // When the token to delete is the last token, the swap operation is unnecessary. However, since this occurs so\n        // rarely (when the last minted token is burnt) that we still do the swap here to avoid the gas cost of adding\n        // an 'if' statement (like in _removeTokenFromOwnerEnumeration)\n        uint256 lastTokenId = _allTokens[lastTokenIndex];\n\n        _allTokens[tokenIndex] = lastTokenId; // Move the last token to the slot of the to-delete token\n        _allTokensIndex[lastTokenId] = tokenIndex; // Update the moved token's index\n\n        // This also deletes the contents at the last position of the array\n        _allTokens.length--;\n        _allTokensIndex[tokenId] = 0;\n    }\n}\n\ncontract ERC721Metadata is ERC721Enumerable, usingOraclize {\n    \n    // TODO: Create private vars for token _name, _symbol, and _baseTokenURI (string)\n    string private _name;\n    string private _symbol;\n    string private _baseTokenURI;\n\n    // TODO: create private mapping of tokenId's to token uri's called '_tokenURIs'\n    mapping(uint256 => string) private _tokenURIs;\n\n    bytes4 private constant _INTERFACE_ID_ERC721_METADATA = 0x5b5e139f;\n\n    /*\n     * 0x5b5e139f ===\n     *     bytes4(keccak256('name()')) ^\n     *     bytes4(keccak256('symbol()')) ^\n     *     bytes4(keccak256('tokenURI(uint256)'))\n     */\n\n    constructor(\n        string memory name,\n        string memory symbol,\n        string memory baseTokenURI\n    ) public {\n        // TODO: set instance var values\n        _name = name;\n        _symbol = symbol;\n        _baseTokenURI = baseTokenURI;\n        _registerInterface(_INTERFACE_ID_ERC721_METADATA);\n    }\n\n    // TODO: create external getter functions for name, symbol, and baseTokenURI\n\n    function name() external view returns (string memory) {\n        return _name;\n    }\n\n    function symbol() external view returns (string memory) {\n        return _symbol;\n    }\n\n    function baseTokenURI() external view returns (string memory) {\n        return _baseTokenURI;\n    }\n\n    function tokenURI(uint256 tokenId) external view returns (string memory) {\n        require(_exists(tokenId), \"The token doesn't exitst\");\n        return _tokenURIs[tokenId];\n    }\n   \n    // TODO: Create an internal function to set the tokenURI of a specified tokenId\n   \n    // It should be the _baseTokenURI + the tokenId in string form\n    // TIP #1: use strConcat() from the imported oraclizeAPI lib to set the complete token URI\n    // TIP #2: you can also use uint2str() to convert a uint to a string\n    // see https://github.com/oraclize/ethereum-api/blob/master/oraclizeAPI_0.5.sol for strConcat()\n    // require the token exists before setting\n    function _setTokenURI(uint256 tokenId) internal\n    {\n        require(_exists(tokenId), \"This token doesn't exitst\");\n        string memory strTokenId = usingOraclize.uint2str(tokenId);\n        _tokenURIs[tokenId] = usingOraclize.strConcat(_baseTokenURI,strTokenId);\n    }\n    //Internal function to burn a specific token\n    // function _burn(address owner, uint256 tokenId) internal {\n    //     super._burn(owner, tokenId);\n    //     if (bytes(_tokenURIs[tokenId]).length != 0) {\n    //         delete _tokenURIs[tokenId];\n    //     }\n    // }\n}   \n\n//  TODO's: Create CustomERC721Token contract that inherits from the ERC721Metadata contract. You can name this contract as you please\n//  1) Pass in appropriate values for the inherited ERC721Metadata contract\n//      - make the base token uri: https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/\n//  2) create a public mint() that does the following:\n//      -can only be executed by the contract owner\n//      -takes in a 'to' address, tokenId, and tokenURI as parameters\n//      -returns a true boolean upon completion of the function\n//      -calls the superclass mint and setTokenURI functions\ncontract ERC721Mintable is ERC721Metadata {\n    constructor(string memory _name, string memory _symbol, string memory _baseTokenURI)\n        ERC721Metadata(_name, _symbol, _baseTokenURI)\n        public {  }\n\n    function mint(address to, uint256 tokenId) public onlyOwner returns(bool)\n    {\n        super._mint(to, tokenId);\n        super._setTokenURI(tokenId);\n        return true;\n    }\n}",
+  "source": "pragma solidity ^0.5.0;\n\nimport \"openzeppelin-solidity/contracts/utils/Address.sol\";\nimport \"openzeppelin-solidity/contracts/drafts/Counters.sol\";\nimport \"openzeppelin-solidity/contracts/math/SafeMath.sol\";\nimport \"openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol\";\nimport \"./Oraclize.sol\";\n\ncontract Ownable {\n    //  1) create a private '_owner' variable of type address with a public getter function\n    address private _owner;\n\n    function getOwner() public view returns (address) {\n        return _owner;\n    }\n\n    //  2) create an internal constructor that sets the _owner var to the creater of the contract\n    constructor() internal {\n        _owner = msg.sender;\n        emit TransferOwnership(address(0), _owner);\n    }\n\n    //  3) create an 'onlyOwner' modifier that throws if called by any account other than the owner.\n    modifier onlyOwner() {\n        require(msg.sender == _owner, \"Only the owner can perform this action.\");\n        _;\n    }\n\n    //  4) fill out the transferOwnership function\n    function transferOwnership(address newOwner) public onlyOwner {\n        // TODO add functionality to transfer control of the contract to a newOwner.\n        // make sure the new owner is a real address\n        _transferOwnership(newOwner);\n    }\n\n    function _transferOwnership(address newOwner) public onlyOwner {\n        // TODO add functionality to transfer control of the contract to a newOwner.\n        // make sure the new owner is a real address\n        require(newOwner != address(0));\n        emit TransferOwnership(_owner, newOwner);\n        _owner = newOwner;\n    }\n\n    //  5) create an event that emits anytime ownerShip is transfered (including in the constructor)\n    event TransferOwnership(address indexed oldOwner, address indexed newOwner);\n}\n\n//  TODO's: Create a Pausable contract that inherits from the Ownable contract\ncontract Pausable is Ownable {\n    //  1) create a private '_paused' variable of type bool\n    bool private _paused;\n\n    //  2) create a public setter using the inherited onlyOwner modifier\n    function setPaused(bool mode) public onlyOwner {\n        require(_paused != mode);\n        _paused = mode;\n        if (mode) emit Unpaused(msg.sender);\n        else emit Paused(msg.sender);\n    }\n\n    //  3) create an internal constructor that sets the _paused variable to false\n    constructor() internal {\n        _paused = false;\n    }\n\n    //  4) create 'whenNotPaused' & 'paused' modifier that throws in the appropriate situation\n    modifier whenNotPaused() {\n        require(!_paused);\n        _;\n    }\n\n    modifier paused() {\n        require(_paused);\n        _;\n    }\n    //  5) create a Paused & Unpaused event that emits the address that triggered the event\n    event Paused(address indexed account);\n    event Unpaused(address indexed account);\n}\n\ncontract ERC165 {\n    bytes4 private constant _INTERFACE_ID_ERC165 = 0x01ffc9a7;\n    /*\n     * 0x01ffc9a7 ===\n     *     bytes4(keccak256('supportsInterface(bytes4)'))\n     */\n\n    /**\n     * @dev a mapping of interface id to whether or not it's supported\n     */\n    mapping(bytes4 => bool) private _supportedInterfaces;\n\n    /**\n     * @dev A contract implementing SupportsInterfaceWithLookup\n     * implement ERC165 itself\n     */\n    constructor() internal {\n        _registerInterface(_INTERFACE_ID_ERC165);\n    }\n\n    /**\n     * @dev implement supportsInterface(bytes4) using a lookup table\n     */\n    function supportsInterface(bytes4 interfaceId)\n        external\n        view\n        returns (bool)\n    {\n        return _supportedInterfaces[interfaceId];\n    }\n\n    /**\n     * @dev internal method for registering an interface\n     */\n    function _registerInterface(bytes4 interfaceId) internal {\n        require(interfaceId != 0xffffffff);\n        _supportedInterfaces[interfaceId] = true;\n    }\n}\n\ncontract ERC721 is Pausable, ERC165 {\n    event Transfer(\n        address indexed from,\n        address indexed to,\n        uint256 indexed tokenId\n    );\n\n    event Approval(\n        address indexed owner,\n        address indexed approved,\n        uint256 indexed tokenId\n    );\n\n    event ApprovalForAll(\n        address indexed owner,\n        address indexed operator,\n        bool approved\n    );\n\n    using SafeMath for uint256;\n    using Address for address;\n    using Counters for Counters.Counter;\n\n    // Equals to `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`\n    // which can be also obtained as `IERC721Receiver(0).onERC721Received.selector`\n    bytes4 private constant _ERC721_RECEIVED = 0x150b7a02;\n\n    // Mapping from token ID to owner\n    mapping(uint256 => address) private _tokenOwner;\n\n    // Mapping from token ID to approved address\n    mapping(uint256 => address) private _tokenApprovals;\n\n    // Mapping from owner to number of owned token\n    // IMPORTANT: this mapping uses Counters lib which is used to protect overflow when incrementing/decrementing a uint\n    // use the following functions when interacting with Counters: increment(), decrement(), and current() to get the value\n    // see: https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/contracts/drafts/Counters.sol\n    mapping(address => Counters.Counter) private _ownedTokensCount;\n\n    // Mapping from owner to operator approvals\n    mapping(address => mapping(address => bool)) private _operatorApprovals;\n\n    bytes4 private constant _INTERFACE_ID_ERC721 = 0x80ac58cd;\n\n    constructor() public {\n        // register the supported interfaces to conform to ERC721 via ERC165\n        _registerInterface(_INTERFACE_ID_ERC721);\n    }\n\n    function balanceOf(address owner) public view returns (uint256) {\n        // TODO return the token balance of given address\n        // TIP: remember the functions to use for Counters. you can refresh yourself with the link above\n        return _ownedTokensCount[owner].current();\n    }\n\n    function ownerOf(uint256 tokenId) public view returns (address) {\n        // TODO return the owner of the given tokenId\n        return _tokenOwner[tokenId];\n    }\n\n    //    @dev Approves another address to transfer the given token ID\n    function approve(address to, uint256 tokenId) public {\n        address owner = ownerOf(tokenId);\n        // TODO require the given address to not be the owner of the tokenId\n        \n        require(to != owner, \" the given address can't be the owner of the tokenId\");\n        // TODO require the msg sender to be the owner of the contract or isApprovedForAll() to be true\n         require(msg.sender == owner || isApprovedForAll(owner, msg.sender), \"Caller is not authorised\");\n        // TODO add 'to' address to token approvals\n        _tokenApprovals[tokenId] = to;\n        // TODO emit Approval Event\n        emit Approval(_tokenOwner[tokenId], to, tokenId);\n    }\n\n    function getApproved(uint256 tokenId) public view returns (address) {\n        // TODO return token approval if it exists\n        require(_exists(tokenId), \"N0N-existent token\");\n        return _tokenApprovals[tokenId];\n    }\n\n    /**\n     * @dev Sets or unsets the approval of a given operator\n     * An operator is allowed to transfer all tokens of the sender on their behalf\n     * @param to operator address to set the approval\n     * @param approved representing the status of the approval to be set\n     */\n    function setApprovalForAll(address to, bool approved) public {\n        require(to != msg.sender);\n        _operatorApprovals[msg.sender][to] = approved;\n        emit ApprovalForAll(msg.sender, to, approved);\n    }\n\n    /**\n     * @dev Tells whether an operator is approved by a given owner\n     * @param owner owner address which you want to query the approval of\n     * @param operator operator address which you want to query the approval of\n     * @return bool whether the given operator is approved by the given owner\n     */\n    function isApprovedForAll(address owner, address operator)\n        public\n        view\n        returns (bool)\n    {\n        return _operatorApprovals[owner][operator];\n    }\n\n    function transferFrom(\n        address from,\n        address to,\n        uint256 tokenId\n    ) public {\n        require(_isApprovedOrOwner(msg.sender, tokenId));\n\n        _transferFrom(from, to, tokenId);\n    }\n\n    function safeTransferFrom(\n        address from,\n        address to,\n        uint256 tokenId\n    ) public {\n        safeTransferFrom(from, to, tokenId, \"\");\n    }\n\n    function safeTransferFrom(\n        address from,\n        address to,\n        uint256 tokenId,\n        bytes memory _data\n    ) public {\n        transferFrom(from, to, tokenId);\n        require(_checkOnERC721Received(from, to, tokenId, _data));\n    }\n\n    /**\n     * @dev Returns whether the specified token exists\n     * @param tokenId uint256 ID of the token to query the existence of\n     * @return bool whether the token exists\n     */\n    function _exists(uint256 tokenId) internal view returns (bool) {\n        address owner = _tokenOwner[tokenId];\n        return owner != address(0);\n    }\n\n    /**\n     * @dev Returns whether the given spender can transfer a given token ID\n     * @param spender address of the spender to query\n     * @param tokenId uint256 ID of the token to be transferred\n     * @return bool whether the msg.sender is approved for the given token ID,\n     * is an operator of the owner, or is the owner of the token\n     */\n    function _isApprovedOrOwner(address spender, uint256 tokenId)\n        internal\n        view\n        returns (bool)\n    {\n        address owner = ownerOf(tokenId);\n        return (spender == owner ||\n            getApproved(tokenId) == spender ||\n            isApprovedForAll(owner, spender));\n    }\n\n    // @dev Internal function to mint a new token\n    // TIP: remember the functions to use for Counters. you can refresh yourself with the link above\n    function _mint(address to, uint256 tokenId)  internal {\n        // TODO revert if given tokenId already exists or given address is invalid\n        require(!_exists(tokenId), \"This token is already exists\");\n\n        // TODO mint tokenId to given address & increase token count of owner\n        _tokenOwner[tokenId] = to;\n        _ownedTokensCount[to].increment();\n\n        // TODO emit Transfer event\n        emit Transfer(address(0), to, tokenId);\n    }\n\n    // @dev Internal function to transfer ownership of a given token ID to another address.\n    // TIP: remember the functions to use for Counters. you can refresh yourself with the link above\n    function _transferFrom(\n        address from,\n        address to,\n        uint256 tokenId\n    ) internal {\n         // TODO: require from address is the owner of the given token\n        require(ownerOf(tokenId) == from, \"Incorrect owner\");\n\n        // TODO: require token is being transfered to valid address\n        require(to != address(0), \"Not allowed to transfer\");\n\n        // TODO: clear approval\n        _clearApproval(tokenId);\n\n        // TODO: update token counts & transfer ownership of the token ID\n        _ownedTokensCount[from].decrement();\n        _ownedTokensCount[to].increment();\n        _tokenOwner[tokenId] = to;\n\n        // TODO: emit correct event\n        emit Transfer(from, to, tokenId);\n    }\n\n    /**\n     * @dev Internal function to invoke `onERC721Received` on a target address\n     * The call is not executed if the target address is not a contract\n     * @param from address representing the previous owner of the given token ID\n     * @param to target address that will receive the tokens\n     * @param tokenId uint256 ID of the token to be transferred\n     * @param _data bytes optional data to send along with the call\n     * @return bool whether the call correctly returned the expected magic value\n     */\n    function _checkOnERC721Received(\n        address from,\n        address to,\n        uint256 tokenId,\n        bytes memory _data\n    ) internal returns (bool) {\n        if (!to.isContract()) {\n            return true;\n        }\n\n        bytes4 retval = IERC721Receiver(to).onERC721Received(\n            msg.sender,\n            from,\n            tokenId,\n            _data\n        );\n        return (retval == _ERC721_RECEIVED);\n    }\n\n    // @dev Private function to clear current approval of a given token ID\n    function _clearApproval(uint256 tokenId) private {\n        if (_tokenApprovals[tokenId] != address(0)) {\n            _tokenApprovals[tokenId] = address(0);\n        }\n    }\n}\n\ncontract ERC721Enumerable is ERC165, ERC721 {\n    // Mapping from owner to list of owned token IDs\n    mapping(address => uint256[]) private _ownedTokens;\n\n    // Mapping from token ID to index of the owner tokens list\n    mapping(uint256 => uint256) private _ownedTokensIndex;\n\n    // Array with all token ids, used for enumeration\n    uint256[] private _allTokens;\n\n    // Mapping from token id to position in the allTokens array\n    mapping(uint256 => uint256) private _allTokensIndex;\n\n    bytes4 private constant _INTERFACE_ID_ERC721_ENUMERABLE = 0x780e9d63;\n\n    /*\n     * 0x780e9d63 ===\n     *     bytes4(keccak256('totalSupply()')) ^\n     *     bytes4(keccak256('tokenOfOwnerByIndex(address,uint256)')) ^\n     *     bytes4(keccak256('tokenByIndex(uint256)'))\n     */\n\n    /**\n     * @dev Constructor function\n     */\n    constructor() public {\n        // register the supported interface to conform to ERC721Enumerable via ERC165\n        _registerInterface(_INTERFACE_ID_ERC721_ENUMERABLE);\n    }\n\n    /**\n     * @dev Gets the token ID at a given index of the tokens list of the requested owner\n     * @param owner address owning the tokens list to be accessed\n     * @param index uint256 representing the index to be accessed of the requested tokens list\n     * @return uint256 token ID at the given index of the tokens list owned by the requested address\n     */\n    function tokenOfOwnerByIndex(address owner, uint256 index)\n        public\n        view\n        returns (uint256)\n    {\n        require(index < balanceOf(owner));\n        return _ownedTokens[owner][index];\n    }\n\n    /**\n     * @dev Gets the total amount of tokens stored by the contract\n     * @return uint256 representing the total amount of tokens\n     */\n    function totalSupply() public view returns (uint256) {\n        return _allTokens.length;\n    }\n\n    /**\n     * @dev Gets the token ID at a given index of all the tokens in this contract\n     * Reverts if the index is greater or equal to the total number of tokens\n     * @param index uint256 representing the index to be accessed of the tokens list\n     * @return uint256 token ID at the given index of the tokens list\n     */\n    function tokenByIndex(uint256 index) public view returns (uint256) {\n        require(index < totalSupply());\n        return _allTokens[index];\n    }\n\n    /**\n     * @dev Internal function to transfer ownership of a given token ID to another address.\n     * As opposed to transferFrom, this imposes no restrictions on msg.sender.\n     * @param from current owner of the token\n     * @param to address to receive the ownership of the given token ID\n     * @param tokenId uint256 ID of the token to be transferred\n     */\n    function _transferFrom(\n        address from,\n        address to,\n        uint256 tokenId\n    ) internal {\n        super._transferFrom(from, to, tokenId);\n\n        _removeTokenFromOwnerEnumeration(from, tokenId);\n\n        _addTokenToOwnerEnumeration(to, tokenId);\n    }\n\n    /**\n     * @dev Internal function to mint a new token\n     * Reverts if the given token ID already exists\n     * @param to address the beneficiary that will own the minted token\n     * @param tokenId uint256 ID of the token to be minted\n     */\n    function _mint(address to, uint256 tokenId) internal {\n        super._mint(to, tokenId);\n\n        _addTokenToOwnerEnumeration(to, tokenId);\n\n        _addTokenToAllTokensEnumeration(tokenId);\n    }\n\n    /**\n     * @dev Gets the list of token IDs of the requested owner\n     * @param owner address owning the tokens\n     * @return uint256[] List of token IDs owned by the requested address\n     */\n    function _tokensOfOwner(address owner)\n        internal\n        view\n        returns (uint256[] storage)\n    {\n        return _ownedTokens[owner];\n    }\n\n    /**\n     * @dev Private function to add a token to this extension's ownership-tracking data structures.\n     * @param to address representing the new owner of the given token ID\n     * @param tokenId uint256 ID of the token to be added to the tokens list of the given address\n     */\n    function _addTokenToOwnerEnumeration(address to, uint256 tokenId) private {\n        _ownedTokensIndex[tokenId] = _ownedTokens[to].length;\n        _ownedTokens[to].push(tokenId);\n    }\n\n    /**\n     * @dev Private function to add a token to this extension's token tracking data structures.\n     * @param tokenId uint256 ID of the token to be added to the tokens list\n     */\n    function _addTokenToAllTokensEnumeration(uint256 tokenId) private {\n        _allTokensIndex[tokenId] = _allTokens.length;\n        _allTokens.push(tokenId);\n    }\n\n    /**\n     * @dev Private function to remove a token from this extension's ownership-tracking data structures. Note that\n     * while the token is not assigned a new owner, the _ownedTokensIndex mapping is _not_ updated: this allows for\n     * gas optimizations e.g. when performing a transfer operation (avoiding double writes).\n     * This has O(1) time complexity, but alters the order of the _ownedTokens array.\n     * @param from address representing the previous owner of the given token ID\n     * @param tokenId uint256 ID of the token to be removed from the tokens list of the given address\n     */\n    function _removeTokenFromOwnerEnumeration(address from, uint256 tokenId)\n        private\n    {\n        // To prevent a gap in from's tokens array, we store the last token in the index of the token to delete, and\n        // then delete the last slot (swap and pop).\n\n        uint256 lastTokenIndex = _ownedTokens[from].length.sub(1);\n        uint256 tokenIndex = _ownedTokensIndex[tokenId];\n\n        // When the token to delete is the last token, the swap operation is unnecessary\n        if (tokenIndex != lastTokenIndex) {\n            uint256 lastTokenId = _ownedTokens[from][lastTokenIndex];\n\n            _ownedTokens[from][tokenIndex] = lastTokenId; // Move the last token to the slot of the to-delete token\n            _ownedTokensIndex[lastTokenId] = tokenIndex; // Update the moved token's index\n        }\n\n        // This also deletes the contents at the last position of the array\n        _ownedTokens[from].length--;\n\n        // Note that _ownedTokensIndex[tokenId] hasn't been cleared: it still points to the old slot (now occupied by\n        // lastTokenId, or just over the end of the array if the token was the last one).\n    }\n\n    /**\n     * @dev Private function to remove a token from this extension's token tracking data structures.\n     * This has O(1) time complexity, but alters the order of the _allTokens array.\n     * @param tokenId uint256 ID of the token to be removed from the tokens list\n     */\n    function _removeTokenFromAllTokensEnumeration(uint256 tokenId) private {\n        // To prevent a gap in the tokens array, we store the last token in the index of the token to delete, and\n        // then delete the last slot (swap and pop).\n\n        uint256 lastTokenIndex = _allTokens.length.sub(1);\n        uint256 tokenIndex = _allTokensIndex[tokenId];\n\n        // When the token to delete is the last token, the swap operation is unnecessary. However, since this occurs so\n        // rarely (when the last minted token is burnt) that we still do the swap here to avoid the gas cost of adding\n        // an 'if' statement (like in _removeTokenFromOwnerEnumeration)\n        uint256 lastTokenId = _allTokens[lastTokenIndex];\n\n        _allTokens[tokenIndex] = lastTokenId; // Move the last token to the slot of the to-delete token\n        _allTokensIndex[lastTokenId] = tokenIndex; // Update the moved token's index\n\n        // This also deletes the contents at the last position of the array\n        _allTokens.length--;\n        _allTokensIndex[tokenId] = 0;\n    }\n}\n\ncontract ERC721Metadata is ERC721Enumerable, usingOraclize {\n    \n    // TODO: Create private vars for token _name, _symbol, and _baseTokenURI (string)\n    string private _name;\n    string private _symbol;\n    string private _baseTokenURI;\n\n    // TODO: create private mapping of tokenId's to token uri's called '_tokenURIs'\n    mapping(uint256 => string) private _tokenURIs;\n\n    bytes4 private constant _INTERFACE_ID_ERC721_METADATA = 0x5b5e139f;\n\n    /*\n     * 0x5b5e139f ===\n     *     bytes4(keccak256('name()')) ^\n     *     bytes4(keccak256('symbol()')) ^\n     *     bytes4(keccak256('tokenURI(uint256)'))\n     */\n\n    constructor(\n        string memory name,\n        string memory symbol,\n        string memory baseTokenURI\n    ) public {\n        // TODO: set instance var values\n        _name = name;\n        _symbol = symbol;\n        _baseTokenURI = baseTokenURI;\n        _registerInterface(_INTERFACE_ID_ERC721_METADATA);\n    }\n\n    // TODO: create external getter functions for name, symbol, and baseTokenURI\n\n    function name() external view returns (string memory) {\n        return _name;\n    }\n\n    function symbol() external view returns (string memory) {\n        return _symbol;\n    }\n\n    function baseTokenURI() external view returns (string memory) {\n        return _baseTokenURI;\n    }\n\n    function tokenURI(uint256 tokenId) external view returns (string memory) {\n        require(_exists(tokenId), \"The token doesn't exitst\");\n        return _tokenURIs[tokenId];\n    }\n   \n    // TODO: Create an internal function to set the tokenURI of a specified tokenId\n   \n    // It should be the _baseTokenURI + the tokenId in string form\n    // TIP #1: use strConcat() from the imported oraclizeAPI lib to set the complete token URI\n    // TIP #2: you can also use uint2str() to convert a uint to a string\n    // see https://github.com/oraclize/ethereum-api/blob/master/oraclizeAPI_0.5.sol for strConcat()\n    // require the token exists before setting\n    function _setTokenURI(uint256 tokenId) internal\n    {\n        require(_exists(tokenId), \"This token doesn't exitst\");\n        string memory strTokenId = usingOraclize.uint2str(tokenId);\n        _tokenURIs[tokenId] = usingOraclize.strConcat(_baseTokenURI,strTokenId);\n    }\n    //Internal function to burn a specific token\n    // function _burn(address owner, uint256 tokenId) internal {\n    //     super._burn(owner, tokenId);\n    //     if (bytes(_tokenURIs[tokenId]).length != 0) {\n    //         delete _tokenURIs[tokenId];\n    //     }\n    // }\n}   \n\n//  TODO's: Create CustomERC721Token contract that inherits from the ERC721Metadata contract. You can name this contract as you please\n//  1) Pass in appropriate values for the inherited ERC721Metadata contract\n//      - make the base token uri: https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/\n//  2) create a public mint() that does the following:\n//      -can only be executed by the contract owner\n//      -takes in a 'to' address, tokenId, and tokenURI as parameters\n//      -returns a true boolean upon completion of the function\n//      -calls the superclass mint and setTokenURI functions\ncontract CustomERC721Token is ERC721Metadata {\n    constructor(string memory _name, string memory _symbol, string memory _baseTokenURI)\n        ERC721Metadata(_name, _symbol, _baseTokenURI)\n        public {  }\n\n    function mint(address to, uint256 tokenId) public onlyOwner returns(bool)\n    {\n        super._mint(to, tokenId);\n        super._setTokenURI(tokenId);\n        return true;\n    }\n}",
   "sourcePath": "/Users/federico/Documents/Blockchain/udacity/new/realstate-capstone/eth-contracts/contracts/ERC721Mintable.sol",
   "ast": {
     "absolutePath": "project:/contracts/ERC721Mintable.sol",
     "exportedSymbols": {
+      "CustomERC721Token": [
+        1475
+      ],
       "ERC165": [
         529
       ],
@@ -134,9 +137,6 @@
       ],
       "ERC721Metadata": [
         1430
-      ],
-      "ERC721Mintable": [
-        1475
       ],
       "Ownable": [
         415
@@ -209,7 +209,7 @@
         "id": 333,
         "nodeType": "ImportDirective",
         "scope": 1476,
-        "sourceUnit": 7801,
+        "sourceUnit": 7744,
         "src": "282:24:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -371,7 +371,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10688,
+                        "referencedDeclaration": 8073,
                         "src": "678:3:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -572,7 +572,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10688,
+                            "referencedDeclaration": 8073,
                             "src": "893:3:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -648,10 +648,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10692,
+                      "referencedDeclaration": 8077,
                       "src": "885:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -941,10 +941,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10691,
+                      "referencedDeclaration": 8076,
                       "src": "1494:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1364,10 +1364,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10691,
+                      "referencedDeclaration": 8076,
                       "src": "2127:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1464,7 +1464,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10688,
+                            "referencedDeclaration": 8073,
                             "src": "2247:3:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1537,7 +1537,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10688,
+                            "referencedDeclaration": 8073,
                             "src": "2209:3:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1805,10 +1805,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10691,
+                      "referencedDeclaration": 8076,
                       "src": "2544:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1888,10 +1888,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10691,
+                      "referencedDeclaration": 8076,
                       "src": "2613:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2419,10 +2419,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10691,
+                      "referencedDeclaration": 8076,
                       "src": "3747:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3870,10 +3870,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10692,
+                      "referencedDeclaration": 8077,
                       "src": "6329:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -3932,7 +3932,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 10688,
+                              "referencedDeclaration": 8073,
                               "src": "6528:3:4",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -4000,7 +4000,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 10688,
+                                "referencedDeclaration": 8073,
                                 "src": "6575:3:4",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -4098,10 +4098,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10692,
+                      "referencedDeclaration": 8077,
                       "src": "6520:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -4488,10 +4488,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10692,
+                      "referencedDeclaration": 8077,
                       "src": "6942:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -4688,7 +4688,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10688,
+                            "referencedDeclaration": 8073,
                             "src": "7414:3:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -4727,10 +4727,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10691,
+                      "referencedDeclaration": 8076,
                       "src": "7400:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -4789,7 +4789,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10688,
+                            "referencedDeclaration": 8073,
                             "src": "7454:3:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -4883,7 +4883,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 10688,
+                          "referencedDeclaration": 8073,
                           "src": "7510:3:4",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -5265,7 +5265,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 10688,
+                              "referencedDeclaration": 8073,
                               "src": "8181:3:4",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -5348,10 +5348,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10691,
+                      "referencedDeclaration": 8076,
                       "src": "8154:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -6009,10 +6009,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10691,
+                      "referencedDeclaration": 8076,
                       "src": "8611:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -6991,10 +6991,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10692,
+                      "referencedDeclaration": 8077,
                       "src": "9983:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -7507,10 +7507,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10692,
+                      "referencedDeclaration": 8077,
                       "src": "10675:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -7661,10 +7661,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10692,
+                      "referencedDeclaration": 8077,
                       "src": "10806:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -8317,7 +8317,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 10688,
+                          "referencedDeclaration": 8073,
                           "src": "12037:3:4",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -9487,10 +9487,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10691,
+                      "referencedDeclaration": 8076,
                       "src": "13927:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -9875,10 +9875,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10691,
+                      "referencedDeclaration": 8076,
                       "src": "14670:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -10101,7 +10101,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10731,
+                        "referencedDeclaration": 8116,
                         "src": "15231:5:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_ERC721Enumerable_$1313",
@@ -10444,7 +10444,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10731,
+                        "referencedDeclaration": 8116,
                         "src": "15703:5:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_ERC721Enumerable_$1313",
@@ -12714,10 +12714,10 @@
               "id": 1316,
               "name": "usingOraclize",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7800,
+              "referencedDeclaration": 7743,
               "src": "20181:13:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_usingOraclize_$7800",
+                "typeIdentifier": "t_contract$_usingOraclize_$7743",
                 "typeString": "contract usingOraclize"
               }
             },
@@ -12732,7 +12732,7 @@
           529,
           1015,
           1313,
-          7800
+          7743
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -12740,7 +12740,7 @@
         "id": 1430,
         "linearizedBaseContracts": [
           1430,
-          7800,
+          7743,
           1313,
           1015,
           529,
@@ -13550,10 +13550,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10692,
+                      "referencedDeclaration": 8077,
                       "src": "21532:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -13798,10 +13798,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        10691,
-                        10692
+                        8076,
+                        8077
                       ],
-                      "referencedDeclaration": 10692,
+                      "referencedDeclaration": 8077,
                       "src": "22169:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -13889,10 +13889,10 @@
                         "name": "usingOraclize",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7800,
+                        "referencedDeclaration": 7743,
                         "src": "22260:13:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_usingOraclize_$7800_$",
+                          "typeIdentifier": "t_type$_t_contract$_usingOraclize_$7743_$",
                           "typeString": "type(contract usingOraclize)"
                         }
                       },
@@ -13903,7 +13903,7 @@
                       "lValueRequested": false,
                       "memberName": "uint2str",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 6648,
+                      "referencedDeclaration": 6591,
                       "src": "22260:22:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_string_memory_ptr_$",
@@ -14024,10 +14024,10 @@
                           "name": "usingOraclize",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7800,
+                          "referencedDeclaration": 7743,
                           "src": "22323:13:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_usingOraclize_$7800_$",
+                            "typeIdentifier": "t_type$_t_contract$_usingOraclize_$7743_$",
                             "typeString": "type(contract usingOraclize)"
                           }
                         },
@@ -14038,7 +14038,7 @@
                         "lValueRequested": false,
                         "memberName": "strConcat",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 6068,
+                        "referencedDeclaration": 6011,
                         "src": "22323:23:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$_t_string_memory_ptr_$",
@@ -14137,7 +14137,7 @@
               "name": "ERC721Metadata",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 1430,
-              "src": "23301:14:4",
+              "src": "23304:14:4",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_ERC721Metadata_$1430",
                 "typeString": "contract ERC721Metadata"
@@ -14145,7 +14145,7 @@
             },
             "id": 1432,
             "nodeType": "InheritanceSpecifier",
-            "src": "23301:14:4"
+            "src": "23304:14:4"
           }
         ],
         "contractDependencies": [
@@ -14155,7 +14155,7 @@
           1015,
           1313,
           1430,
-          7800
+          7743
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -14164,21 +14164,21 @@
         "linearizedBaseContracts": [
           1475,
           1430,
-          7800,
+          7743,
           1313,
           1015,
           529,
           483,
           415
         ],
-        "name": "ERC721Mintable",
+        "name": "CustomERC721Token",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
               "id": 1446,
               "nodeType": "Block",
-              "src": "23476:4:4",
+              "src": "23479:4:4",
               "statements": []
             },
             "documentation": null,
@@ -14195,7 +14195,7 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 1434,
-                    "src": "23430:5:4",
+                    "src": "23433:5:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
                       "typeString": "string memory"
@@ -14208,7 +14208,7 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 1436,
-                    "src": "23437:7:4",
+                    "src": "23440:7:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
                       "typeString": "string memory"
@@ -14221,7 +14221,7 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 1438,
-                    "src": "23446:13:4",
+                    "src": "23449:13:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
                       "typeString": "string memory"
@@ -14236,14 +14236,14 @@
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
                   "referencedDeclaration": 1430,
-                  "src": "23415:14:4",
+                  "src": "23418:14:4",
                   "typeDescriptions": {
                     "typeIdentifier": "t_type$_t_contract$_ERC721Metadata_$1430_$",
                     "typeString": "type(contract ERC721Metadata)"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "23415:45:4"
+                "src": "23418:45:4"
               }
             ],
             "name": "",
@@ -14258,7 +14258,7 @@
                   "name": "_name",
                   "nodeType": "VariableDeclaration",
                   "scope": 1447,
-                  "src": "23334:19:4",
+                  "src": "23337:19:4",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -14269,7 +14269,7 @@
                     "id": 1433,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "23334:6:4",
+                    "src": "23337:6:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -14284,7 +14284,7 @@
                   "name": "_symbol",
                   "nodeType": "VariableDeclaration",
                   "scope": 1447,
-                  "src": "23355:21:4",
+                  "src": "23358:21:4",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -14295,7 +14295,7 @@
                     "id": 1435,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "23355:6:4",
+                    "src": "23358:6:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -14310,7 +14310,7 @@
                   "name": "_baseTokenURI",
                   "nodeType": "VariableDeclaration",
                   "scope": 1447,
-                  "src": "23378:27:4",
+                  "src": "23381:27:4",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -14321,7 +14321,7 @@
                     "id": 1437,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "23378:6:4",
+                    "src": "23381:6:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -14331,16 +14331,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "23333:73:4"
+              "src": "23336:73:4"
             },
             "returnParameters": {
               "id": 1445,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "23476:0:4"
+              "src": "23479:0:4"
             },
             "scope": 1475,
-            "src": "23322:158:4",
+            "src": "23325:158:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -14349,7 +14349,7 @@
             "body": {
               "id": 1473,
               "nodeType": "Block",
-              "src": "23564:99:4",
+              "src": "23567:99:4",
               "statements": [
                 {
                   "expression": {
@@ -14362,7 +14362,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 1449,
-                        "src": "23586:2:4",
+                        "src": "23589:2:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -14375,7 +14375,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 1451,
-                        "src": "23590:7:4",
+                        "src": "23593:7:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -14399,11 +14399,11 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10735,
-                        "src": "23574:5:4",
+                        "referencedDeclaration": 8120,
+                        "src": "23577:5:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_super$_ERC721Mintable_$1475",
-                          "typeString": "contract super ERC721Mintable"
+                          "typeIdentifier": "t_super$_CustomERC721Token_$1475",
+                          "typeString": "contract super CustomERC721Token"
                         }
                       },
                       "id": 1460,
@@ -14414,7 +14414,7 @@
                       "memberName": "_mint",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 1150,
-                      "src": "23574:11:4",
+                      "src": "23577:11:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256)"
@@ -14428,7 +14428,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "23574:24:4",
+                    "src": "23577:24:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -14436,7 +14436,7 @@
                   },
                   "id": 1464,
                   "nodeType": "ExpressionStatement",
-                  "src": "23574:24:4"
+                  "src": "23577:24:4"
                 },
                 {
                   "expression": {
@@ -14449,7 +14449,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 1451,
-                        "src": "23627:7:4",
+                        "src": "23630:7:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -14469,11 +14469,11 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 10735,
-                        "src": "23608:5:4",
+                        "referencedDeclaration": 8120,
+                        "src": "23611:5:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_super$_ERC721Mintable_$1475",
-                          "typeString": "contract super ERC721Mintable"
+                          "typeIdentifier": "t_super$_CustomERC721Token_$1475",
+                          "typeString": "contract super CustomERC721Token"
                         }
                       },
                       "id": 1467,
@@ -14484,7 +14484,7 @@
                       "memberName": "_setTokenURI",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 1429,
-                      "src": "23608:18:4",
+                      "src": "23611:18:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
@@ -14498,7 +14498,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "23608:27:4",
+                    "src": "23611:27:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -14506,7 +14506,7 @@
                   },
                   "id": 1470,
                   "nodeType": "ExpressionStatement",
-                  "src": "23608:27:4"
+                  "src": "23611:27:4"
                 },
                 {
                   "expression": {
@@ -14519,7 +14519,7 @@
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "23652:4:4",
+                    "src": "23655:4:4",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -14530,7 +14530,7 @@
                   "functionReturnParameters": 1457,
                   "id": 1472,
                   "nodeType": "Return",
-                  "src": "23645:11:4"
+                  "src": "23648:11:4"
                 }
               ]
             },
@@ -14549,14 +14549,14 @@
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
                   "referencedDeclaration": 371,
-                  "src": "23536:9:4",
+                  "src": "23539:9:4",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "23536:9:4"
+                "src": "23539:9:4"
               }
             ],
             "name": "mint",
@@ -14571,7 +14571,7 @@
                   "name": "to",
                   "nodeType": "VariableDeclaration",
                   "scope": 1474,
-                  "src": "23500:10:4",
+                  "src": "23503:10:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -14582,7 +14582,7 @@
                     "id": 1448,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "23500:7:4",
+                    "src": "23503:7:4",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -14598,7 +14598,7 @@
                   "name": "tokenId",
                   "nodeType": "VariableDeclaration",
                   "scope": 1474,
-                  "src": "23512:15:4",
+                  "src": "23515:15:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -14609,7 +14609,7 @@
                     "id": 1450,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "23512:7:4",
+                    "src": "23515:7:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -14619,7 +14619,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "23499:29:4"
+              "src": "23502:29:4"
             },
             "returnParameters": {
               "id": 1457,
@@ -14631,7 +14631,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 1474,
-                  "src": "23554:4:4",
+                  "src": "23557:4:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -14642,7 +14642,7 @@
                     "id": 1455,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "23554:4:4",
+                    "src": "23557:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -14652,25 +14652,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "23553:6:4"
+              "src": "23556:6:4"
             },
             "scope": 1475,
-            "src": "23486:177:4",
+            "src": "23489:177:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 1476,
-        "src": "23274:391:4"
+        "src": "23274:394:4"
       }
     ],
-    "src": "0:23665:4"
+    "src": "0:23668:4"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "project:/contracts/ERC721Mintable.sol",
       "exportedSymbols": {
+        "CustomERC721Token": [
+          1475
+        ],
         "ERC165": [
           529
         ],
@@ -14682,9 +14685,6 @@
         ],
         "ERC721Metadata": [
           1430
-        ],
-        "ERC721Mintable": [
-          1475
         ],
         "Ownable": [
           415
@@ -14770,7 +14770,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 7801,
+          "SourceUnit": 7744,
           "absolutePath": "project:/contracts/Oraclize.sol",
           "file": "./Oraclize.sol",
           "scope": 1476,
@@ -15010,7 +15010,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 10688,
+                                  "referencedDeclaration": 8073,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -15213,10 +15213,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10692,
+                              "referencedDeclaration": 8077,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
@@ -15257,7 +15257,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 10688,
+                                      "referencedDeclaration": 8073,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -15595,10 +15595,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10691,
+                              "referencedDeclaration": 8076,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -16097,10 +16097,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10691,
+                              "referencedDeclaration": 8076,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -16287,7 +16287,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 10688,
+                                      "referencedDeclaration": 8073,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -16364,7 +16364,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 10688,
+                                      "referencedDeclaration": 8073,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -16552,10 +16552,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10691,
+                              "referencedDeclaration": 8076,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -16665,10 +16665,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10691,
+                              "referencedDeclaration": 8076,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -17264,10 +17264,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10691,
+                              "referencedDeclaration": 8076,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -18832,10 +18832,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10692,
+                              "referencedDeclaration": 8077,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
@@ -18948,10 +18948,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10692,
+                              "referencedDeclaration": 8077,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
@@ -19007,7 +19007,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 10688,
+                                          "referencedDeclaration": 8073,
                                           "type": "msg",
                                           "value": "msg"
                                         },
@@ -19109,7 +19109,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 10688,
+                                          "referencedDeclaration": 8073,
                                           "type": "msg",
                                           "value": "msg"
                                         },
@@ -19489,10 +19489,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10692,
+                              "referencedDeclaration": 8077,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
@@ -19758,10 +19758,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10691,
+                              "referencedDeclaration": 8076,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -19816,7 +19816,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 10688,
+                                      "referencedDeclaration": 8073,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -19909,7 +19909,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 10688,
+                                          "referencedDeclaration": 8073,
                                           "type": "msg",
                                           "value": "msg"
                                         },
@@ -20032,7 +20032,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 10688,
+                                  "referencedDeclaration": 8073,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -20439,10 +20439,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10691,
+                              "referencedDeclaration": 8076,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -20506,7 +20506,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 10688,
+                                      "referencedDeclaration": 8073,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -21162,10 +21162,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10691,
+                              "referencedDeclaration": 8076,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -22180,10 +22180,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10692,
+                              "referencedDeclaration": 8077,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
@@ -22754,10 +22754,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10692,
+                              "referencedDeclaration": 8077,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
@@ -22909,10 +22909,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10692,
+                              "referencedDeclaration": 8077,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
@@ -23901,7 +23901,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 10688,
+                                  "referencedDeclaration": 8073,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -24921,10 +24921,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10691,
+                              "referencedDeclaration": 8076,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -25344,10 +25344,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10691,
+                              "referencedDeclaration": 8076,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -25665,7 +25665,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 10731,
+                                  "referencedDeclaration": 8116,
                                   "type": "contract super ERC721Enumerable",
                                   "value": "super"
                                 },
@@ -26029,7 +26029,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 10731,
+                                  "referencedDeclaration": 8116,
                                   "type": "contract super ERC721Enumerable",
                                   "value": "super"
                                 },
@@ -28422,14 +28422,14 @@
             529,
             1015,
             1313,
-            7800
+            7743
           ],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             1430,
-            7800,
+            7743,
             1313,
             1015,
             529,
@@ -28470,7 +28470,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "usingOraclize",
-                  "referencedDeclaration": 7800,
+                  "referencedDeclaration": 7743,
                   "type": "contract usingOraclize"
                 },
                 "id": 1316,
@@ -29386,10 +29386,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10692,
+                              "referencedDeclaration": 8077,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
@@ -29632,10 +29632,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                10691,
-                                10692
+                                8076,
+                                8077
                               ],
-                              "referencedDeclaration": 10692,
+                              "referencedDeclaration": 8077,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
@@ -29784,7 +29784,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "uint2str",
-                              "referencedDeclaration": 6648,
+                              "referencedDeclaration": 6591,
                               "type": "function (uint256) pure returns (string memory)"
                             },
                             "children": [
@@ -29794,7 +29794,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 7800,
+                                  "referencedDeclaration": 7743,
                                   "type": "type(contract usingOraclize)",
                                   "value": "usingOraclize"
                                 },
@@ -29919,7 +29919,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "member_name": "strConcat",
-                                  "referencedDeclaration": 6068,
+                                  "referencedDeclaration": 6011,
                                   "type": "function (string memory,string memory) pure returns (string memory)"
                                 },
                                 "children": [
@@ -29929,7 +29929,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 7800,
+                                      "referencedDeclaration": 7743,
                                       "type": "type(contract usingOraclize)",
                                       "value": "usingOraclize"
                                     },
@@ -30009,7 +30009,7 @@
             1015,
             1313,
             1430,
-            7800
+            7743
           ],
           "contractKind": "contract",
           "documentation": null,
@@ -30017,14 +30017,14 @@
           "linearizedBaseContracts": [
             1475,
             1430,
-            7800,
+            7743,
             1313,
             1015,
             529,
             483,
             415
           ],
-          "name": "ERC721Mintable",
+          "name": "CustomERC721Token",
           "scope": 1476
         },
         "children": [
@@ -30042,12 +30042,12 @@
                 },
                 "id": 1431,
                 "name": "UserDefinedTypeName",
-                "src": "23301:14:4"
+                "src": "23304:14:4"
               }
             ],
             "id": 1432,
             "name": "InheritanceSpecifier",
-            "src": "23301:14:4"
+            "src": "23304:14:4"
           },
           {
             "attributes": {
@@ -30083,12 +30083,12 @@
                         },
                         "id": 1433,
                         "name": "ElementaryTypeName",
-                        "src": "23334:6:4"
+                        "src": "23337:6:4"
                       }
                     ],
                     "id": 1434,
                     "name": "VariableDeclaration",
-                    "src": "23334:19:4"
+                    "src": "23337:19:4"
                   },
                   {
                     "attributes": {
@@ -30109,12 +30109,12 @@
                         },
                         "id": 1435,
                         "name": "ElementaryTypeName",
-                        "src": "23355:6:4"
+                        "src": "23358:6:4"
                       }
                     ],
                     "id": 1436,
                     "name": "VariableDeclaration",
-                    "src": "23355:21:4"
+                    "src": "23358:21:4"
                   },
                   {
                     "attributes": {
@@ -30135,17 +30135,17 @@
                         },
                         "id": 1437,
                         "name": "ElementaryTypeName",
-                        "src": "23378:6:4"
+                        "src": "23381:6:4"
                       }
                     ],
                     "id": 1438,
                     "name": "VariableDeclaration",
-                    "src": "23378:27:4"
+                    "src": "23381:27:4"
                   }
                 ],
                 "id": 1439,
                 "name": "ParameterList",
-                "src": "23333:73:4"
+                "src": "23336:73:4"
               },
               {
                 "attributes": {
@@ -30156,7 +30156,7 @@
                 "children": [],
                 "id": 1445,
                 "name": "ParameterList",
-                "src": "23476:0:4"
+                "src": "23479:0:4"
               },
               {
                 "children": [
@@ -30172,7 +30172,7 @@
                     },
                     "id": 1440,
                     "name": "Identifier",
-                    "src": "23415:14:4"
+                    "src": "23418:14:4"
                   },
                   {
                     "attributes": {
@@ -30186,7 +30186,7 @@
                     },
                     "id": 1441,
                     "name": "Identifier",
-                    "src": "23430:5:4"
+                    "src": "23433:5:4"
                   },
                   {
                     "attributes": {
@@ -30200,7 +30200,7 @@
                     },
                     "id": 1442,
                     "name": "Identifier",
-                    "src": "23437:7:4"
+                    "src": "23440:7:4"
                   },
                   {
                     "attributes": {
@@ -30214,12 +30214,12 @@
                     },
                     "id": 1443,
                     "name": "Identifier",
-                    "src": "23446:13:4"
+                    "src": "23449:13:4"
                   }
                 ],
                 "id": 1444,
                 "name": "ModifierInvocation",
-                "src": "23415:45:4"
+                "src": "23418:45:4"
               },
               {
                 "attributes": {
@@ -30230,12 +30230,12 @@
                 "children": [],
                 "id": 1446,
                 "name": "Block",
-                "src": "23476:4:4"
+                "src": "23479:4:4"
               }
             ],
             "id": 1447,
             "name": "FunctionDefinition",
-            "src": "23322:158:4"
+            "src": "23325:158:4"
           },
           {
             "attributes": {
@@ -30272,12 +30272,12 @@
                         },
                         "id": 1448,
                         "name": "ElementaryTypeName",
-                        "src": "23500:7:4"
+                        "src": "23503:7:4"
                       }
                     ],
                     "id": 1449,
                     "name": "VariableDeclaration",
-                    "src": "23500:10:4"
+                    "src": "23503:10:4"
                   },
                   {
                     "attributes": {
@@ -30298,17 +30298,17 @@
                         },
                         "id": 1450,
                         "name": "ElementaryTypeName",
-                        "src": "23512:7:4"
+                        "src": "23515:7:4"
                       }
                     ],
                     "id": 1451,
                     "name": "VariableDeclaration",
-                    "src": "23512:15:4"
+                    "src": "23515:15:4"
                   }
                 ],
                 "id": 1452,
                 "name": "ParameterList",
-                "src": "23499:29:4"
+                "src": "23502:29:4"
               },
               {
                 "children": [
@@ -30331,17 +30331,17 @@
                         },
                         "id": 1455,
                         "name": "ElementaryTypeName",
-                        "src": "23554:4:4"
+                        "src": "23557:4:4"
                       }
                     ],
                     "id": 1456,
                     "name": "VariableDeclaration",
-                    "src": "23554:4:4"
+                    "src": "23557:4:4"
                   }
                 ],
                 "id": 1457,
                 "name": "ParameterList",
-                "src": "23553:6:4"
+                "src": "23556:6:4"
               },
               {
                 "attributes": {
@@ -30360,12 +30360,12 @@
                     },
                     "id": 1453,
                     "name": "Identifier",
-                    "src": "23536:9:4"
+                    "src": "23539:9:4"
                   }
                 ],
                 "id": 1454,
                 "name": "ModifierInvocation",
-                "src": "23536:9:4"
+                "src": "23539:9:4"
               },
               {
                 "children": [
@@ -30413,18 +30413,18 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 10735,
-                                  "type": "contract super ERC721Mintable",
+                                  "referencedDeclaration": 8120,
+                                  "type": "contract super CustomERC721Token",
                                   "value": "super"
                                 },
                                 "id": 1458,
                                 "name": "Identifier",
-                                "src": "23574:5:4"
+                                "src": "23577:5:4"
                               }
                             ],
                             "id": 1460,
                             "name": "MemberAccess",
-                            "src": "23574:11:4"
+                            "src": "23577:11:4"
                           },
                           {
                             "attributes": {
@@ -30438,7 +30438,7 @@
                             },
                             "id": 1461,
                             "name": "Identifier",
-                            "src": "23586:2:4"
+                            "src": "23589:2:4"
                           },
                           {
                             "attributes": {
@@ -30452,17 +30452,17 @@
                             },
                             "id": 1462,
                             "name": "Identifier",
-                            "src": "23590:7:4"
+                            "src": "23593:7:4"
                           }
                         ],
                         "id": 1463,
                         "name": "FunctionCall",
-                        "src": "23574:24:4"
+                        "src": "23577:24:4"
                       }
                     ],
                     "id": 1464,
                     "name": "ExpressionStatement",
-                    "src": "23574:24:4"
+                    "src": "23577:24:4"
                   },
                   {
                     "children": [
@@ -30504,18 +30504,18 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 10735,
-                                  "type": "contract super ERC721Mintable",
+                                  "referencedDeclaration": 8120,
+                                  "type": "contract super CustomERC721Token",
                                   "value": "super"
                                 },
                                 "id": 1465,
                                 "name": "Identifier",
-                                "src": "23608:5:4"
+                                "src": "23611:5:4"
                               }
                             ],
                             "id": 1467,
                             "name": "MemberAccess",
-                            "src": "23608:18:4"
+                            "src": "23611:18:4"
                           },
                           {
                             "attributes": {
@@ -30529,17 +30529,17 @@
                             },
                             "id": 1468,
                             "name": "Identifier",
-                            "src": "23627:7:4"
+                            "src": "23630:7:4"
                           }
                         ],
                         "id": 1469,
                         "name": "FunctionCall",
-                        "src": "23608:27:4"
+                        "src": "23611:27:4"
                       }
                     ],
                     "id": 1470,
                     "name": "ExpressionStatement",
-                    "src": "23608:27:4"
+                    "src": "23611:27:4"
                   },
                   {
                     "attributes": {
@@ -30561,32 +30561,32 @@
                         },
                         "id": 1471,
                         "name": "Literal",
-                        "src": "23652:4:4"
+                        "src": "23655:4:4"
                       }
                     ],
                     "id": 1472,
                     "name": "Return",
-                    "src": "23645:11:4"
+                    "src": "23648:11:4"
                   }
                 ],
                 "id": 1473,
                 "name": "Block",
-                "src": "23564:99:4"
+                "src": "23567:99:4"
               }
             ],
             "id": 1474,
             "name": "FunctionDefinition",
-            "src": "23486:177:4"
+            "src": "23489:177:4"
           }
         ],
         "id": 1475,
         "name": "ContractDefinition",
-        "src": "23274:391:4"
+        "src": "23274:394:4"
       }
     ],
     "id": 1476,
     "name": "SourceUnit",
-    "src": "0:23665:4"
+    "src": "0:23668:4"
   },
   "compiler": {
     "name": "solc",
@@ -30594,7 +30594,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.10",
-  "updatedAt": "2023-01-18T11:21:18.029Z",
+  "updatedAt": "2023-01-18T11:50:19.292Z",
   "devdoc": {
     "methods": {}
   },
