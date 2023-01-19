@@ -9429,7 +9429,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.10",
-  "updatedAt": "2023-01-18T11:50:19.300Z",
+  "updatedAt": "2023-01-18T15:41:31.472Z",
   "devdoc": {
     "methods": {
       "isApprovedForAll(address,address)": {
