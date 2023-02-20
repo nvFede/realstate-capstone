@@ -20,7 +20,7 @@ contract("SolnSquareVerifier", (accounts) => {
   // Test if a new solution can be added for contract - SolnSquareVerifier
   it("Should Test if a new solution can be added for contract SolnSquareVerifier", async function () {
     const tx = await contract.addSolution(
-      5,
+      4,
       ACCOUNT_TWO,
       web3.utils.fromUtf8("1111111"),
       { from: ACCOUNT_TWO }
@@ -40,9 +40,8 @@ contract("SolnSquareVerifier", (accounts) => {
       inputs: input,
     } = proof;
 
-    console.log(proof.proof.a);
 
-    let result = await SolnSquareVerifier.mintNFTWithVerification.call(
+    let result = await contract.mintNFTWithVerification.call(
       1, // Id
       ACCOUNT_TWO, //Address To
       proof.proof.a, // Proof A
