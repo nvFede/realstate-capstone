@@ -1,7 +1,7 @@
 // migrating the appropriate contracts
 
 var ERC721Mintable = artifacts.require("CustomERC721Token");
-var Verifier = artifacts.require("./verifier.sol");
+var SquareVerifier = artifacts.require("./Verifier.sol");
 var SolnSquareVerifier = artifacts.require("./SolnSquareVerifier.sol");
 
 module.exports = async (deployer) => {
@@ -11,12 +11,9 @@ module.exports = async (deployer) => {
     "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/";
 
   
-  await deployer.deploy(Verifier);
+  await deployer.deploy(SquareVerifier);
   await deployer.deploy(
     SolnSquareVerifier,
-    Verifier.address,
-    NAME,
-    SYMBOL,
-    BASE_TOKEN_URI
+    SquareVerifier.address,
   );
 };

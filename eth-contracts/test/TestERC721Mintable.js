@@ -1,91 +1,92 @@
-
-const ERC721Mintable = artifacts.require("CustomERC721Token");
+var ERC721MintableComplete = artifacts.require("CustomERC721Token");
 
 contract("TestERC721Mintable", (accounts) => {
-
-  const SYMBOL = 'REMT';
-  const NAME = "Real Estate Marketplace Token";
-  const BASE_TOKEN_URI = 'https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/'
- 
-  
-  const ACCOUNT_ONE   = accounts[0];
-  const ACCOUNT_TWO   = accounts[1];
+  const ACCOUNT_ONE = accounts[0];
+  const ACCOUNT_TWO = accounts[1];
   const ACCOUNT_THREE = accounts[2];
-  const ACCOUNT_FOUR  = accounts[3];
-  const ACCOUNT_FIVE  = accounts[4];
+  const ACCOUNT_FOUR = accounts[3];
+
+  let contract;
+
+  // const symbol = "REMT";
+  // const name = "Real Estate Marketplace Token";
+  // const baseUri =
+  //   "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/";
 
   describe("match erc721 spec", function () {
     beforeEach(async function () {
-      this.contract = await ERC721Mintable.new(NAME, SYMBOL, BASE_TOKEN_URI, { from: ACCOUNT_ONE });
+      // contract = await ERC721MintableComplete.new(symbol, name, baseUri, {
+      //   from: ACCOUNT_ONE,
+      // });
+      contract = await ERC721MintableComplete.new({ from: ACCOUNT_ONE});
 
       // TODO: mint multiple tokens
-      await this.contract.mint(ACCOUNT_ONE, 1, { from: ACCOUNT_ONE });
-      await this.contract.mint(ACCOUNT_TWO, 2, { from: ACCOUNT_ONE });
-      await this.contract.mint(ACCOUNT_THREE, 3, { from: ACCOUNT_ONE });
-      await this.contract.mint(ACCOUNT_FOUR, 4, { from: ACCOUNT_ONE });
-      await this.contract.mint(ACCOUNT_FIVE, 4, { from: ACCOUNT_ONE });
+      try {
+        await contract.mint(ACCOUNT_ONE, 1, { from: ACCOUNT_ONE });
+        await contract.mint(ACCOUNT_TWO, 2, { from: ACCOUNT_ONE });
+        await contract.mint(ACCOUNT_THREE, 3, { from: ACCOUNT_ONE });
+        await contract.mint(ACCOUNT_FOUR, 4, { from: ACCOUNT_ONE });
+      } catch (error) {
+        console.log(error);
+      }
     });
 
-    it("should return total supply", async function () {
-      let supply = await this.contract.totalSupply.call();
-      assert.equal(supply, 4, "should return total supply.");
+    it("Should return total supply", async function () {
+      let totalSupply = await contract.totalSupply.call();
+      assert.equal(totalSupply, 4, "Do not match total Supply");
     });
 
-    it("should get token balance", async function () {
-      let balance = await this.contract.balanceOf.call(ACCOUNT_ONE);
-      assert.equal(balance.toNumber(), 1, "should get token balance.");
+    it("Should get token balance", async function () {
+      let balance = await contract.balanceOf.call(ACCOUNT_ONE);
+      assert.equal(balance.toNumber(), 1, "Should display token balance.");
     });
 
-    // token uri should be complete i.e: https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/1
-    it("should return token uri", async function () {
-      let tokenURI = await this.contract.tokenURI.call(1);
+    // // token uri Should be complete i.e: https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/1
+    it("Should return token uri", async function () {
+      let tokenURI = await contract.tokenURI.call(1);
       assert.equal(
         tokenURI,
         "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/1",
-        "should return token uri"
+        "Should return the token uri"
       );
     });
 
-    it("should transfer token from one owner to another", async function () {
-      await this.contract.transferFrom(ACCOUNT_ONE, ACCOUNT_THREE, 1);
-      let owner = await this.contract.ownerOf.call(1);
+    it("Should transfer token from one owner to another", async function () {
+      await contract.transferFrom(ACCOUNT_ONE, ACCOUNT_THREE, 1);
+      let owner = await contract.ownerOf.call(1);
       assert.equal(
         owner,
         ACCOUNT_THREE,
-        "should transfer token from one owner to another."
+        "ERROR: Should transfer token from one owner to another owner."
       );
     });
   });
 
   describe("have ownership properties", function () {
     beforeEach(async function () {
-      this.contract = await ERC721Mintable.new({ from: ACCOUNT_ONE });
+      contract = await ERC721MintableComplete.new({ from: ACCOUNT_ONE});
     });
 
-    it("should fail when minting when address is not contract owner", async function () {
-      let exception = false;
+    it("Should fail when minting address is not the contract owner", async function () {
+      let revert = false;
       try {
-        await this.contract.mint(ACCOUNT_THREE, 5, { from: ACCOUNT_TWO });
-      } catch (e) {
-        exception = true;
+        await contract.mint(ACCOUNT_TWO, 3, { from: ACCOUNT_TWO });
+        // contract = await ERC721MintableComplete.new(symbol, name, baseUri, {
+        //   from: ACCOUNT_ONE,
+        // });
+      } catch (err) {
+        revert = true;
       }
-      assert.equal(
-        exception,
-        true,
-        "should fail when minting when address is not contract owner."
-      );
+      assert.equal(revert, true, "ERROR: The contract should fail");
     });
 
-    it("should return contract owner", async function () {
-      let contract_owner = await this.contract.getOwner.call({
-        from: ACCOUNT_ONE,
-      });
+    it("Should return the contract owner", async function () {
+      let contract_owner = await contract.owner.call();
       assert.equal(
         contract_owner,
         ACCOUNT_ONE,
-        "should return contract owner."
+        "ERROR: Should return the contract owner."
       );
     });
   });
 });
-``
